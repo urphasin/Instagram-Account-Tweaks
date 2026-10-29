@@ -3,10 +3,14 @@ let v2 = document.querySelector(".x1qnrgzn");
 let v3 = document.querySelectorAll(".x1qnrgzn");
 console.log(v3.length)
 
-let x3 = v3[436].children[0].children[0].children[0];
-let userName    = x3.children[1].children[0].children[0].children[0];
-let profileName = x3.children[1].children[0].children[0].children[1];
-console.log(profileName);
+for (let i = 0; i < 5; i++) {
+    let x3 = v3[i].children[0].children[0].children[0];
+    let userName    = x3.children[1].children[0].children[0].children[0].children[0].textContent;
+    let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
+    console.log(userName);
+    console.log(profileName);
+    console.log("\n");
+}
 
 let p2 = v2.parentElement
 // console.log(p2);
