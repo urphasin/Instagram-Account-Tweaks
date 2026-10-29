@@ -3,6 +3,9 @@ let v2 = document.querySelector(".x1qnrgzn");
 let v3 = document.querySelectorAll(".x1qnrgzn");
 console.log(v3.length)
 
+let p2 = v2.parentElement
+// console.log(p2);
+
 for (let i = 0; i == 5; i++) {
     let x3 = v3[i].children[0].children[0].children[0];
     //following
@@ -14,17 +17,18 @@ for (let i = 0; i == 5; i++) {
     console.log("\n");
 }
 
-let x3 = v3[436].children[0].children[0].children[0].children[0];
-let following = x3.children[2].children[0];
-let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
-let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
-console.log(userName);
-console.log(profileName);
-console.log(following);
+// scrollToBottom(p2, 60000, 3000);
+
+let x3 = v3[0].children[0].children[0].children[0];
+// let following = x3.children[2];
+// let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
+// let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
+// console.log(userName);
+// console.log(profileName);
+// console.log(following);
+console.log(x3);
 console.log("\n");
 
-let p2 = v2.parentElement
-// console.log(p2);
 
 function scrollToBottom(p2, runTime, runInterval) {
     // store the scroll banner
@@ -64,3 +68,4 @@ function checkScrollable(p2) {
         el = el.parentElement;
     }
 }
+
