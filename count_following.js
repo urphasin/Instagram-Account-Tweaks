@@ -22,12 +22,24 @@ for (let i = 0; i == 5; i++) {
 // 9th Following
 let x3 = v3[8].children[0].children[0].children[0];
 
-// let followingButton = x3.children[2].children[0].children[0].click();
-// let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
+let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
 let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
-// console.log(userName);
-console.log(profileName);
-console.log(following);
+let followingButton = x3.children[2].children[0].children[0].click();
+
+setTimeout(() => {
+    let unfollow = document.querySelector("button._a9--._ap36._a9-_");
+
+    if (unfollow) {
+        unfollow.click();
+        console.log("Button clicked");
+    } else {
+        console.log("Button not found");
+    }
+}, 2000);
+console.log(`Unfollowed: ${userName}`);
+
+console.log("Username: ", userName);
+console.log("ProfileName: ", profileName);
 // console.log(x3);
 console.log("\n");
 
