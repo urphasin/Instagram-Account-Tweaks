@@ -6,47 +6,39 @@ console.log(v3.length)
 let p2 = v2.parentElement
 // console.log(p2);
 
-for (let i = 0; i == 5; i++) {
-    let x3 = v3[i].children[0].children[0].children[0];
-    //following
-    
-    let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
-    let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
-    console.log(userName);
-    console.log(profileName);
-    console.log("\n");
-}
-
 scrollToBottom(p2, 60000, 3000);
-
+unfollowNum(4);
 // 9th Following
 
-function unfollowAll() {
-    let x3 = v3[8].children[0].children[0].children[0];
 
-let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
-let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
-let followingButton = x3.children[2].children[0].children[0];
-// followingButton.click();
+function unfollowNum(num) {
+    for (let i = 0; i < num; i++) {
+        let x3 = v3[i].children[0].children[0].children[0];
 
-setTimeout(() => {
-    let unfollow = document.querySelector("button._a9--._ap36._a9-_");
+    let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
+    let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
+    let followingButton = x3.children[2].children[0].children[0];
+    // followingButton.click();
 
-    if (unfollow) {
-        // unfollow.click();
-        console.log("Button clicked");
-    } else {
-        console.log("Button not found");
+    setTimeout( () => {
+        let unfollow = document.querySelector("button._a9--._ap36._a9-_");
+
+        if (unfollow) {
+            // unfollow.click();
+            console.log("Button clicked");
+        } else {
+            console.log("Button not found");
+        }
     }
-}, 2000);
-console.log(`Unfollowed: ${userName}`);
+    , 2000);
+    console.log(`Unfollowed: ${userName}`);
 
-console.log("Username: ", userName);
-console.log("ProfileName: ", profileName);
-// console.log(x3);
-console.log("\n");
+    console.log("Username: ", userName);
+    console.log("ProfileName: ", profileName);
+    // console.log(x3);
+    console.log("\n");
+    }
 }
-
 
 function scrollToBottom(p2, runTime, runInterval) {
     // store the scroll banner
@@ -86,4 +78,3 @@ function checkScrollable(p2) {
         el = el.parentElement;
     }
 }
-
