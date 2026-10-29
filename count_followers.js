@@ -1,10 +1,10 @@
 // each p2 child is a follower or following
 let p2 = document.querySelector(".x1qnrgzn").parentElement;
 let v3 = document.querySelectorAll(".x1qnrgzn");
+
 // scrollToBottom(p2, 100000, 7000);
 
-
-removeFollowerNum(3);
+removeFollowerNum(94);
 
 function removeFollowerNum(num) {
     let i = 0;
@@ -22,7 +22,7 @@ function removeFollowerNum(num) {
         let followingButton = x3.children[2].children[0].children[0];
 
         // Click the Following button to open the confirmation dialog
-        // followingButton.click();
+        followingButton.click();
 
         console.log(`Remove: ${userName}`);
         console.log("Username: ", userName);
@@ -36,7 +36,7 @@ function removeFollowerNum(num) {
             );
 
             if (unfollow) {
-                // unfollow.click();
+                unfollow.click();
                 console.log("Button clicked");
             } else {
                 console.log("Button not found");
@@ -44,14 +44,13 @@ function removeFollowerNum(num) {
 
             // Move to the next account after checking
             i++;
-            setTimeout(next, 2000);
+            setTimeout(next, 3000);
 
-        }, 2000);
+        }, 7000);
     }
 
     next();
 }
-
 
 function scrollToBottom(p2, runTime, runInterval) {
     // store the scroll banner
