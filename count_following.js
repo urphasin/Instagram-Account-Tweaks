@@ -17,10 +17,12 @@ for (let i = 0; i == 5; i++) {
     console.log("\n");
 }
 
-// scrollToBottom(p2, 60000, 3000);
+scrollToBottom(p2, 60000, 3000);
 
 // 9th Following
-let x3 = v3[8].children[0].children[0].children[0];
+
+function unfollowAll() {
+    let x3 = v3[8].children[0].children[0].children[0];
 
 let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
 let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
@@ -43,6 +45,7 @@ console.log("Username: ", userName);
 console.log("ProfileName: ", profileName);
 // console.log(x3);
 console.log("\n");
+}
 
 
 function scrollToBottom(p2, runTime, runInterval) {
