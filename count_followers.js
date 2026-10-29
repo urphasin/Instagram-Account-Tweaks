@@ -1,8 +1,7 @@
 // each p2 child is a follower or following
 let p2 = document.querySelector(".x1qnrgzn").parentElement;
-console.log(p2);
 
-// scrollToBottom(p2, 100000, 7000);
+scrollToBottom(p2, 100000, 7000);
 
 function scrollToBottom(p2, runTime, runInterval) {
     // store the scroll banner
