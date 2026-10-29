@@ -20,13 +20,14 @@ for (let i = 0; i == 5; i++) {
 // scrollToBottom(p2, 60000, 3000);
 
 let x3 = v3[0].children[0].children[0].children[0];
-// let following = x3.children[2];
+
+let followingButton = x3.children[2].children[0].children[0];
 // let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
 // let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
 // console.log(userName);
 // console.log(profileName);
-// console.log(following);
-console.log(x3);
+console.log(following);
+// console.log(x3);
 console.log("\n");
 
 
