@@ -25,7 +25,7 @@ let x3 = v3[8].children[0].children[0].children[0];
 let userName = x3.children[1].children[0].children[0].children[0].children[0].textContent;
 let profileName = x3.children[1].children[0].children[0].children[1].children[0].textContent;
 let followingButton = x3.children[2].children[0].children[0];
-followingButton.click();
+// followingButton.click();
 
 setTimeout(() => {
     let unfollow = document.querySelector("button._a9--._ap36._a9-_");
